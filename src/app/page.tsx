@@ -22,7 +22,7 @@ export default function Home() {
           titleComponent={
             <>
               <h1 className="text-4xl md:text-[3rem] font-bold ">
-                I'm Luke Johnson
+                I&apos;m Luke Johnson
                 <br />
                 <span className="text-4xl font-semibold text-black dark:text-white mt-1 leading-none">Scroll down to see some of my projects</span>
               </h1>

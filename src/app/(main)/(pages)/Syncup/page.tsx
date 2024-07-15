@@ -30,9 +30,9 @@ const Page = (props: Props) => {
         <p className="px-4 md:px-0">
           Sync-Up is a mobile application built and designed by me and a peer from University, for the Warren Project who are a charity based in Hull.
           The app provides information about events in the local area hosted by other organisations linked with the Warren Project, depending on the
-          user's interests. I focused on the front-end design and devleopment, first I designed the UI/UX using Adobe Xd while communicating with the
-          Warren Project to get feedback and make changes where needed. I then developed the app using React Native with TypeScript implementing the
-          API's my peer created.
+          user&apos;s interests. I focused on the front-end design and devleopment, first I designed the UI/UX using Adobe Xd while communicating with
+          the Warren Project to get feedback and make changes where needed. I then developed the app using React Native with TypeScript implementing
+          the API&apos;s my peer created.
         </p>
         <Separator className="my-4" />
 
