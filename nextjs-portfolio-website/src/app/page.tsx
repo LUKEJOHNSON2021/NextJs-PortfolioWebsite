@@ -1,7 +1,10 @@
+import EmailForm from "@/components/global/email-form";
 import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards";
+import Navbar from "@/components/global/navbar";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
-import { clients } from "@/lib/constant";
+import { HeroParallax } from "@/components/ui/hero-parallax";
+import { clients, products } from "@/lib/constant";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -9,6 +12,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between w-full relative ">
+      <Navbar />
+
       <div className="absolute inset-0 z-0">
         <BackgroundGradientAnimation interactive />
       </div>
@@ -16,7 +21,7 @@ export default function Home() {
         <ContainerScroll
           titleComponent={
             <>
-              <h1 className="text-4xl md:text-[6rem] font-bold ">
+              <h1 className="text-4xl md:text-[3rem] font-bold ">
                 I'm Luke Johnson
                 <br />
                 <span className="text-4xl font-semibold text-black dark:text-white mt-1 leading-none">Scroll down to see some of my projects</span>
@@ -35,6 +40,9 @@ export default function Home() {
         </ContainerScroll>
         <div className="items-center w-full flex flex-col md:pt-0 pt-20">
           <InfiniteMovingCards className="md:mt-[1rem] mt-[-20px]" items={clients} direction="right" speed="slow" />
+        </div>
+        <div className="pt-20">
+          <HeroParallax products={products} />
         </div>
       </div>
     </main>
