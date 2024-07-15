@@ -73,7 +73,7 @@ const Navbar = ({}) => {
             </Link>
           </li>
           <li className="hover:text-gray-300 transition duration-300">
-            <Link href="#" onClick={closeMenu}>
+            <Link href="/" onClick={closeMenu}>
               Coming Soon
             </Link>
           </li>
@@ -124,7 +124,7 @@ const Navbar = ({}) => {
             </Link>
           </li>
           <li className="hover:text-gray-300 transition duration-300 py-4">
-            <Link href="#" onClick={closeMenu}>
+            <Link href="/" onClick={closeMenu}>
               Coming Soon
             </Link>
           </li>
