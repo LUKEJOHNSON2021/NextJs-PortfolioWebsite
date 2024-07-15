@@ -33,9 +33,9 @@ const EmailForm = (props: Props) => {
   const formData = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    const emailjsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "s";
-    const emailjsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "s";
-    const emailjsPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "s";
+    const emailjsServiceId = process.env.EMAILJS_SERVICE_ID || "s";
+    const emailjsTemplateId = process.env.EMAILJS_TEMPLATE_ID || "s";
+    const emailjsPublicKey = process.env.EMAILJS_PUBLIC_KEY || "s";
 
     e.preventDefault();
 
