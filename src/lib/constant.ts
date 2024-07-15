@@ -75,7 +75,7 @@ export const products = [
   },
   {
     title: "Portfilio 2",
-    link: "/",
+    link: "/PortfolioTwo",
     thumbnail: "/Portfolio2Project.png",
   },
 ];
