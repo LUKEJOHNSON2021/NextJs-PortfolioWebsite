@@ -61,7 +61,7 @@ export const products = [
   {
     title: "Organize Time",
     link: "/OrganizeTime",
-    thumbnail: "/OrganizeTimeDesktop2.png",
+    thumbnail: "/OrganizetimeDesktop2.png",
   },
   {
     title: "Game Hub",

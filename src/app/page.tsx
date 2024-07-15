@@ -11,9 +11,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between w-full relative ">
+    <main className="flex min-h-screen flex-col items-center justify-between w-full relative">
       <Navbar />
-
       <div className="absolute inset-0 z-0">
         <BackgroundGradientAnimation interactive />
       </div>

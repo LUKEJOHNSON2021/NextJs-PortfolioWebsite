@@ -27,9 +27,7 @@ const Page = (props: Props) => {
         </motion.h1>
       </LampContainer>
       <div className="max-w-3xl mx-auto antialiased pt-4 relative ">
-        {/* TODO: Change links to not lukejohnsondev once new website is live*/}
-
-        <Links website="https://www.lukejohnsondev.com/" github="https://github.com/LUKEJOHNSON2021/PortfolioWebsite" />
+        <Links website="https://portfolio-website-ten-tau-88.vercel.app/" github="https://github.com/LUKEJOHNSON2021/PortfolioWebsite" />
         <p className="px-4 md:px-0">
           My first portfolio project, built using React with TypeScript, it leverages the robust UI components from Material-UI to ensure an intuitive
           and engaging user experience. It was built to showcase some skills and projects however lacked the complexity and functionality of my later
