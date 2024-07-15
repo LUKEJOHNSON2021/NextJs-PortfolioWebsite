@@ -34,7 +34,7 @@ const Page = (props: Props) => {
           projects.
         </p>
         <Separator className="my-4" />
-        <Image src="/Portfolio1img.png" alt="Organize Time Mobile" width={1920} height={1080} />
+        <Image src="/Portfolio1Img.png" alt="Portfolio 1" width={1920} height={1080} />
         <Separator className="my-4" />
         <p className="px-4 md:px-0">
           It was designed with responsiveness in mind, the website adapts seamlessly across all devices, including mobile phones, tablets, and
@@ -42,9 +42,9 @@ const Page = (props: Props) => {
           design ensures that content is optimally displayed and navigable regardless of the device used, enhancing usability and engagement.
         </p>
         <Separator className="my-4" />
-        <Image src="/Portfolio1img2.png" alt="Game Hub Full Light" width={1920} height={1080} />
+        <Image src="/Portfolio1Img2.png" alt="Portfolio 1" width={1920} height={1080} />
         <Separator className="my-4" />
-        <Image src="/Portfolio1img3.png" alt="Game Hub Full Light" width={1920} height={1080} />
+        <Image src="/Portfolio1Img3.png" alt="Portfolio 1" width={1920} height={1080} />
 
         <Separator className="my-4" />
       </div>
