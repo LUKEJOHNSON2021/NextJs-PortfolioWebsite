@@ -45,7 +45,7 @@ const Page = (props: Props) => {
         <Separator className="my-4" />
         <Image src="/OrganizeTimeDesktop1.png" alt="Game Hub Full Light" width={1920} height={1080} />
         <Separator className="my-4" />
-        <Image src="/OrganizeTimeDesktop2.png" alt="Game Hub Full Light" width={1920} height={1080} />
+        <Image src="/OrganizetimeDesktop2.png" alt="Game Hub Full Light" width={1920} height={1080} />
 
         <Separator className="my-4" />
       </div>
