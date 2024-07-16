@@ -5,6 +5,7 @@ import { BackgroundGradientAnimation } from "@/components/ui/background-gradient
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { clients, products } from "@/lib/constant";
+import { Github, Linkedin, LinkedinIcon } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -38,9 +39,17 @@ export default function Home() {
           />
         </ContainerScroll>
         <div className="items-center w-full flex flex-col md:pt-0 pt-20">
+          <div className="flex flex-row w-1/2 justify-evenly pb-[1rem]">
+            <Link href={"https://github.com/LUKEJOHNSON2021"}>
+              <Github size={50} />
+            </Link>
+            <Link href={"www.linkedin.com/in/luke-johnson-b4967426a"}>
+              <Linkedin size={50} />
+            </Link>
+          </div>
           <InfiniteMovingCards className="md:mt-[1rem] mt-[-20px]" items={clients} direction="right" speed="slow" />
         </div>
-        <div className="pt-20">
+        <div className="pt-40 ">
           <HeroParallax products={products} />
         </div>
       </div>
