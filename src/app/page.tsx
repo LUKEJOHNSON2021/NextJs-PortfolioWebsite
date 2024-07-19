@@ -38,7 +38,11 @@ export default function Home() {
             draggable={false}
           />
         </ContainerScroll>
+        <div className="pt-40 ">
+          <HeroParallax products={products} />
+        </div>
         <div className="items-center w-full flex flex-col md:pt-0 pt-20">
+          <InfiniteMovingCards className="md:mt-[1rem] mt-[-20px]" items={clients} direction="right" speed="slow" />
           <div className="flex flex-row w-1/2 justify-evenly pb-[1rem]">
             <Link href={"https://github.com/LUKEJOHNSON2021"}>
               <Github size={50} />
@@ -47,10 +51,6 @@ export default function Home() {
               <Linkedin size={50} />
             </Link>
           </div>
-          <InfiniteMovingCards className="md:mt-[1rem] mt-[-20px]" items={clients} direction="right" speed="slow" />
-        </div>
-        <div className="pt-40 ">
-          <HeroParallax products={products} />
         </div>
       </div>
     </main>
