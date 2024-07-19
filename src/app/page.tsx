@@ -43,7 +43,7 @@ export default function Home() {
             <Link href={"https://github.com/LUKEJOHNSON2021"}>
               <Github size={50} />
             </Link>
-            <Link href={"www.linkedin.com/in/luke-johnson-b4967426a"}>
+            <Link href={"https://www.linkedin.com/in/luke-johnson-b4967426a/"}>
               <Linkedin size={50} />
             </Link>
           </div>
