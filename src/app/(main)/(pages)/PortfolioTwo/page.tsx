@@ -28,7 +28,7 @@ const Page = (props: Props) => {
       </LampContainer>
       <div className="max-w-3xl mx-auto antialiased pt-4 relative ">
         {/* TODO: Change links */}
-        <Links website="https://www.lukejohnsondev.com/" github="https://github.com/LUKEJOHNSON2021/PortfolioWebsite" />
+        <Links website="https://www.lukejohnsondev.com/" github="https://github.com/LUKEJOHNSON2021/NextJs-PortfolioWebsite" />
         <p className="px-4 md:px-0">
           My second portfolio project, built using Next.js with TypeScript and Tailwind CSS, it uses components from aceternity ui for the animations
           and shadcn for ui for components. These two UI commponent providers were chosen as they provide a range of components however only require
