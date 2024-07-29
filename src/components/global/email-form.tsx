@@ -105,7 +105,7 @@ const EmailForm = (props: Props) => {
 
         <div className="flex flex-col">
           <label htmlFor="email" className="text-lg">
-            Email address for contacting
+            Your email address
           </label>
           <input
             id="email"
