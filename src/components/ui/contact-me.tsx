@@ -46,7 +46,7 @@ const ContactMe = () => {
           LinkedIn
         </motion.a>
         <motion.a
-          href="/contact"
+          href="/contact-me"
           className="bg-zinc-900 dark:bg-zinc-200 text-white dark:text-zinc-900 flex flex-row items-center rounded-full p-6 transition-all duration-300 hover:scale-105"
           whileHover={{ scale: 1.1 }}
         >
