@@ -1,19 +1,12 @@
-"use client";
-import EmailForm from "@/components/global/email-form";
-import { LampContainer } from "@/components/ui/lamp";
-import { motion } from "framer-motion";
+import EmailForm from "@/components/ui/email-form";
 import React from "react";
 
-type Props = {};
-
-const Page = (props: Props) => {
+const page = () => {
   return (
-    <div className="relative flex flex-col w-full items-center justify-center">
-      <div className="w-full md:w-1/2 flex flex-col px-3">
-        <EmailForm />
-      </div>
+    <div className="flex flex-1 justify-center flex-col w-full items-center overflow-hidden">
+      <EmailForm />
     </div>
   );
 };
 
-export default Page;
+export default page;

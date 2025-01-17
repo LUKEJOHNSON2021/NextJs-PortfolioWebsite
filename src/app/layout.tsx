@@ -1,11 +1,30 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/providers/theme-provider";
+import NavBar from "@/components/navigation/nav-bar";
 import { Toaster } from "@/components/ui/toaster";
-import { Analytics } from "@vercel/analytics/react";
+import Providers from "@/providers/providers";
 
-const inter = DM_Sans({ subsets: ["latin"] });
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: "500",
+});
+
+const sourceCodePro = Source_Code_Pro({
+  variable: "--font-source-code-pro",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Luke Johnson Dev",
@@ -19,12 +38,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+      <head>
+        <link rel="icon" href="/icon.svg" type="image/svg" sizes="32x32" />
+      </head>
+      <body
+        className={`${geistSans.variable} ${sourceCodePro.variable} ${geistMono.variable} ${poppins.variable} antialiased bg-white dark:bg-zinc-900 min-h-screen flex-col items-center flex`}
+      >
+        <Providers>
+          <NavBar />
           {children}
           <Toaster />
-          <Analytics />
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
