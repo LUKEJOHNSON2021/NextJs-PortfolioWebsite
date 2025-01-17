@@ -1,4 +1,3 @@
-"use client";
 import EmailForm from "@/components/ui/email-form";
 import React from "react";
 

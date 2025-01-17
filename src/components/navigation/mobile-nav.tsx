@@ -60,7 +60,7 @@ export default function MobileMenu() {
               <Link href="/projects" className="text-xl text-zinc-700 hover:text-zinc-900 font-medium" onClick={() => setIsMenuOpen(false)}>
                 Projects
               </Link>
-              <Link href="/contact" className="text-xl text-zinc-700 hover:text-zinc-900 font-medium" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/contact-me" className="text-xl text-zinc-700 hover:text-zinc-900 font-medium" onClick={() => setIsMenuOpen(false)}>
                 Contact Me
               </Link>
               <button className="text-zinc-500 text-lg" onClick={() => setIsMenuOpen(false)} aria-label="Close Menu">
