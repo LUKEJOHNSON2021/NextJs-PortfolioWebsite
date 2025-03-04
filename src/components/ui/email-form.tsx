@@ -51,8 +51,10 @@ const EmailForm = () => {
 
     // Prepare the form data for sending via emailjs
     const emailData = {
-      ...formData,
-      to_name: "Recipient", // Adjust this as per your email template
+      user_name: formData.name,
+      user_email: formData.email,
+      message: formData.message,
+      to_name: "Recipient", // if you need this field as well
     };
 
     // Send email using emailjs
