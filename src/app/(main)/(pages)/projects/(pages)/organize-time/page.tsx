@@ -27,13 +27,10 @@ const Page = () => {
       <h1 className="text-2xl font-bold pb-5">App Images</h1>
       <div className="flex flex-wrap justify-center">
         <div className="w-full p-2">
-          <img src="/ProjectImages/OrganizeTime/OrganizeTime.png" alt="Rcadia Home page" className="w-full md:w-3/4 h-auto mx-auto" />
+          <img src="/ProjectImages/OrganizeTime/OrganizeTime.png" alt="Organize Time App" className="w-full md:w-3/4 h-auto mx-auto" />
         </div>
         <div className="w-full p-2">
-          <img src="/ProjectImages/OrganizeTime/OrganizeTimeDesktop1.png" alt="Rcadia Marketplace" className="w-full md:w-3/4  h-auto mx-auto" />
-        </div>
-        <div className="w-full p-2">
-          <img src="/ProjectImages/OrganizeTime/OrganizeTimeMobile.png" alt="Rcadia Profile" className="w-full md:w-3/4  h-auto mx-auto" />
+          <img src="/ProjectImages/OrganizeTime/OrganizeTimeMobile.png" alt="Organize Time Mobile" className="w-full md:w-3/4  h-auto mx-auto" />
         </div>
       </div>
       <Separator className="my-4" />

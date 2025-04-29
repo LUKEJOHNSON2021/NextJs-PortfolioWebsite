@@ -8,7 +8,7 @@ export default function StaticNavBar() {
         <Link href="/projects" className=" transition font-medium dark:text-zinc-400 dark:hover:text-zinc-200 text-zinc-700 hover:text-zinc-900">
           Projects
         </Link>
-        <Link href="/contact-me" className=" transition font-medium dark:text-zinc-400 dark:hover:text-zinc-200 text-zinc-700 hover:text-zinc-900">
+        <Link href="/contact" className=" transition font-medium dark:text-zinc-400 dark:hover:text-zinc-200 text-zinc-700 hover:text-zinc-900">
           Contact Me
         </Link>
       </div>

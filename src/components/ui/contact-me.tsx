@@ -38,7 +38,7 @@ const ContactMe = () => {
       >
         <motion.a
           href="https://www.linkedin.com/in/luke-johnson-b4967426a/"
-          className="bg-zinc-900 dark:bg-zinc-200 text-white dark:text-zinc-900 flex flex-row items-center rounded-full p-6 transition-all duration-300 hover:scale-105"
+          className="bg-zinc-900 dark:bg-zinc-200 text-white dark:text-zinc-900 flex flex-row items-center rounded-xl p-4 transition-all duration-300 hover:scale-105"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
@@ -46,8 +46,8 @@ const ContactMe = () => {
           LinkedIn
         </motion.a>
         <motion.a
-          href="/contact-me"
-          className="bg-zinc-900 dark:bg-zinc-200 text-white dark:text-zinc-900 flex flex-row items-center rounded-full p-6 transition-all duration-300 hover:scale-105"
+          href="/contact"
+          className="bg-zinc-900 dark:bg-zinc-200 text-white dark:text-zinc-900 flex flex-row items-center rounded-xl p-4 transition-all duration-300 hover:scale-105"
           whileHover={{ scale: 1.1 }}
         >
           Contact Me

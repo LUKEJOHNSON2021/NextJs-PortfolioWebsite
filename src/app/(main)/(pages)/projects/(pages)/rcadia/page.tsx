@@ -1,5 +1,6 @@
 import Links from "@/components/ui/links";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 import React from "react";
 
 const Page = () => {
@@ -16,7 +17,7 @@ const Page = () => {
         explore and participate in arcade games seamlessly, blending innovative technology with intuitive design.
         <br />
         <br />
-        In addition to the frontend development, I design and planned an upcoming backend, which will include a C# backend hosted on Azure. This
+        In addition to the frontend development, I designed and developed a suite of API&apos;s, which includes a C# backend hosted on Azure. This
         backend integrates a Cosmos NoSQL database for scalable data storage and Azure Blob Storage for efficient image management. The architecture
         employs the repository pattern to facilitate unit testing and enable a test-driven development workflow, ensuring a robust and maintainable
         system.
@@ -31,14 +32,41 @@ const Page = () => {
       <h1 className="text-2xl font-bold pb-5">Website Images</h1>
       <div className="flex flex-wrap justify-center">
         <div className="w-full p-2">
-          <img src="/ProjectImages/Rcadia/RcadiaHomePage.png" alt="Rcadia Home page" className="w-full md:w-3/4 h-auto mx-auto" />
-        </div>
-        {/* <div className="w-full p-2">
-          <img src="/ProjectImages/Rcadia/RcadiaMarketplace.png" alt="Rcadia Marketplace" className="w-full md:w-3/4  h-auto mx-auto" />
+          <Image
+            src="/ProjectImages/Rcadia/RcadiaHomePage.png"
+            width={1200} // set a good base size
+            height={675} // maintain the image's aspect ratio
+            alt="Rcadia Home page"
+            className="w-full md:w-3/4 h-auto mx-auto"
+          />
         </div>
         <div className="w-full p-2">
-          <img src="/ProjectImages/Rcadia/RcadiaProfile.png" alt="Rcadia Profile" className="w-full md:w-3/4  h-auto mx-auto" />
-        </div> */}
+          <Image
+            src="/ProjectImages/Rcadia/RcadiaMarketplace.png"
+            width={1200} // set a good base size
+            height={675} // maintain the image's aspect ratio
+            alt="Rcadia Marketplace"
+            className="w-full md:w-3/4  h-auto mx-auto"
+          />
+        </div>
+        <div className="w-full p-2">
+          <Image
+            src="/ProjectImages/Rcadia/RcadiaLeaderboards.png"
+            width={1200} // set a good base size
+            height={675} // maintain the image's aspect ratio
+            alt="Rcadia Leaderboards"
+            className="w-full md:w-3/4  h-auto mx-auto"
+          />
+        </div>
+        <div className="w-full p-2">
+          <Image
+            src="/ProjectImages/Rcadia/RcadiaProfile.png"
+            width={1200} // set a good base size
+            height={675} // maintain the image's aspect ratio
+            alt="Rcadia Profile"
+            className="w-full md:w-3/4  h-auto mx-auto"
+          />
+        </div>
       </div>
       <Separator className="my-4" />
     </div>

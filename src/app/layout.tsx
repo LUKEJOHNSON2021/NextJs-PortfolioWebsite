@@ -4,7 +4,6 @@ import "./globals.css";
 import NavBar from "@/components/navigation/nav-bar";
 import { Toaster } from "@/components/ui/toaster";
 import Providers from "@/providers/providers";
-import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,9 +46,10 @@ export default function RootLayout({
       >
         <Providers>
           <NavBar />
-          {children}
-          <Toaster />
-          <Analytics />
+          <main className="pt-14 flex flex-col w-full min-h-[calc(100vh-3.5rem)]">
+            {children}
+            <Toaster />
+          </main>
         </Providers>
       </body>
     </html>

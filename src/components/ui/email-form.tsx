@@ -51,10 +51,8 @@ const EmailForm = () => {
 
     // Prepare the form data for sending via emailjs
     const emailData = {
-      user_name: formData.name,
-      user_email: formData.email,
-      message: formData.message,
-      to_name: "Recipient", // if you need this field as well
+      ...formData,
+      to_name: "Recipient", // Adjust this as per your email template
     };
 
     // Send email using emailjs
@@ -82,7 +80,12 @@ const EmailForm = () => {
   };
 
   return (
-    <motion.div className="flex w-full md:w-1/2 flex-col gap-10 px-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+    <motion.div
+      className="flex max-w-[800px] w-full md:w-1/2 flex-col gap-10 px-5"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="flex justify-center font-semibold	text-3xl">Contact Me</div>
       <form ref={formData} onSubmit={handleSubmit(sendEmail)} className="flex flex-col gap-10 pb-10">
         <div className="flex flex-col">
@@ -129,7 +132,7 @@ const EmailForm = () => {
         <div className="justify-center flex">
           <button
             type="submit"
-            className="bg-zinc-900 dark:bg-zinc-200 text-white dark:text-zinc-900 flex flex-row items-center rounded-full p-6 transition-all duration-300 hover:scale-105"
+            className="bg-zinc-900 dark:bg-zinc-200 text-white dark:text-zinc-900 flex flex-row items-center rounded-xl p-3 transition-all duration-300 hover:scale-105"
           >
             Send Message
           </button>
