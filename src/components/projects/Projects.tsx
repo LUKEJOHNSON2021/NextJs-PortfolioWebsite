@@ -61,14 +61,23 @@ const items = [
     icon: <img src="/Logos/Sync-Up-Logo.png" alt="Sync up Logo" className="h-4 w-4 text-neutral-500" />,
     url: "/projects/sync-up",
   },
+  // {
+  //   title: "Portfolio",
+  //   description: "React, Next.js",
+  //   header: (
+  //     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center bg-[url('/Headers/Portfolio.png')] bg-cover bg-center" />
+  //   ),
+  //   icon: <CiGlobe className="h-4 w-4 text-neutral-500" />,
+  //   url: "/projects/portfolio",
+  // },
   {
-    title: "Portfolio",
+    title: "Forrester Park Vets",
     description: "React, Next.js",
     header: (
-      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center bg-[url('/Headers/Portfolio.png')] bg-cover bg-center" />
+      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center bg-[url('/Headers/ForresterParkVets.png')] bg-cover bg-center" />
     ),
-    icon: <CiGlobe className="h-4 w-4 text-neutral-500" />,
-    url: "/projects/portfolio",
+    icon: <img src="/Logos/ForresterPark.png" alt="Sync up Logo" className="h-4 w-4 text-neutral-500" />,
+    url: "/projects/forrester-park-vets",
   },
   {
     title: "Cover Flow, Music Player",
