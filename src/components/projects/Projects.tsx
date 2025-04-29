@@ -1,5 +1,4 @@
 import React from "react";
-import { CiGlobe } from "react-icons/ci";
 import { MdKeyboardVoice } from "react-icons/md";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 
