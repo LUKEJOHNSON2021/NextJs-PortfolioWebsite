@@ -26,11 +26,11 @@ export default function MobileMenu() {
     <>
       {/* Hamburger Button */}
       <button
-        className="md:hidden flex w-full justify-end text-zinc-900 text-2xl"
+        className="md:hidden flex w-full justify-end text-zinc-900 dark:text-white text-2xl"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle Menu"
       >
-        <IoMenu className="text-zinc-900 text-black text-3xl" />
+        <IoMenu className="text-zinc-900 text-black dark:text-white text-3xl" />
       </button>
 
       {/* Mobile Menu */}
@@ -50,17 +50,25 @@ export default function MobileMenu() {
 
             {/* Menu Panel */}
             <motion.div
-              className="fixed top-0 right-0 h-screen w-3/4 bg-white shadow-lg z-50 flex flex-col items-center pt-20 space-y-6"
+              className="fixed top-0 right-0 h-screen w-3/4 bg-white dark:bg-zinc-900 shadow-lg z-50 flex flex-col items-center pt-20 space-y-6"
               initial="hidden"
               animate="visible"
               exit="exit"
               variants={menuVariants}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              <Link href="/projects" className="text-xl text-zinc-700 hover:text-zinc-900 font-medium" onClick={() => setIsMenuOpen(false)}>
+              <Link
+                href="/projects"
+                className="text-xl dark:text-white text-zinc-700 hover:text-zinc-900 font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Projects
               </Link>
-              <Link href="/contact" className="text-xl text-zinc-700 hover:text-zinc-900 font-medium" onClick={() => setIsMenuOpen(false)}>
+              <Link
+                href="/contact"
+                className="text-xl dark:text-white text-zinc-700 hover:text-zinc-900 font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact Me
               </Link>
               <button className="text-zinc-500 text-lg" onClick={() => setIsMenuOpen(false)} aria-label="Close Menu">
