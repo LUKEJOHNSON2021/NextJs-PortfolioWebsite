@@ -5,7 +5,11 @@ type Props = {
 };
 
 const layout = ({ children }: Props) => {
-  return <div className="flex flex-col w-full min-h-[calc(100vh-3.5rem)] pt-14">{children}</div>;
+  return (
+    <div className="flex items-center justify-center min-h-screen w-full pt-14">
+      <div className="flex flex-col w-full max-w-[1414px]">{children}</div>
+    </div>
+  );
 };
 
 export default layout;
