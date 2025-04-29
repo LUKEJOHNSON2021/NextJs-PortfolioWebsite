@@ -11,7 +11,7 @@ const LandingText = () => {
       transition={{ duration: 1.2, ease: "easeOut" }} // Smooth transition
     >
       <motion.h1
-        className="small-fluid-text font-medium text-zinc-950 dark:text-zinc-200 pl-2"
+        className="small-fluid-text font-medium text-zinc-950 dark:text-zinc-200 md:pl-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 1 }} // Slight delay for the "Hello! I'm Luke."

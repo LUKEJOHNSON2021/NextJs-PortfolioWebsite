@@ -17,7 +17,7 @@ body {
   }
 
   .small-fluid-text {
-    font-size: clamp(1rem, 2vw, 3rem); /* Min, preferred, max sizes */
+    font-size: clamp(1.2rem, 2vw, 3rem); /* Min, preferred, max sizes */
   }
 }
 
