@@ -82,12 +82,12 @@ export default function Home() {
       <div className="relative h-full z-10 w-full pt-8 overscroll-none">
         <NavBar />
         <div className="px-[5%] not-only-of-type:flex flex-col justify-center flex flex-1 h-[80svh] ">
-          <h1 className="text-5xl md:text-6xl font-bold text-black mb-4 leading-tight">
+          <h1 className="text-2xl md:text-6xl font-bold text-black mb-4 leading-tight">
             Hello!
             <br />
-            I&apos;m <span className="2xl:bg-black 2xl:text-white px-2 py-1 rounded-xl">Luke Johnson</span>,
+            I&apos;m <span className="bg-black text-white px-2 py-1 rounded-xl">Luke Johnson</span>,
             <br />
-            These are some Ideas <span className="2xl:bg-black 2xl:text-white px-2 py-1 rounded-xl">I&apos;ve Helped Bring to Life</span>
+            These are some Ideas<span className="2xl:bg-black 2xl:text-white px-2 py-1 rounded-xl">I&apos;ve Helped Bring to Life</span>
           </h1>
         </div>
         <div className="h-[500svh] md:h-[700svh] w-full relative">
