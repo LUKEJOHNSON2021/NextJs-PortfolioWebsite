@@ -3,7 +3,7 @@ import GitHubCalendar from "react-github-calendar";
 
 export default function About() {
   return (
-    <div id="about" className="flex h-[120dvh] w-full flex-col items-center justify-center gap-8 ">
+    <div id="about" className="flex h-[120svh] w-full flex-col items-center justify-center gap-8 ">
       {/* Text Content */}
       <div className="flex w-full flex-col space-y-6 text-center max-w-4xl">
         <div className="space-y-2">

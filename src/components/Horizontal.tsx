@@ -9,8 +9,8 @@ export default function Horizontal({ projects }: { projects: Project[] }) {
   const x = useTransform(scrollYProgress, [0, 0.06, 0.94, 1], ["0%", "0%", "-80%", "-80%"]);
 
   return (
-    <div className=" h-[500dvh] md:h-[700dvh]" ref={targetRef}>
-      <div className="h-[100dvh] sticky top-0 flex items-center justify-start overflow-hidden">
+    <div className=" h-[500svh] md:h-[700svh]" ref={targetRef}>
+      <div className="h-[100svh] sticky top-0 flex items-center justify-start overflow-hidden">
         <motion.div
           id="projects"
           style={{

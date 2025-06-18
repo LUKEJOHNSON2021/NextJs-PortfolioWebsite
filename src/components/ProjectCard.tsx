@@ -48,9 +48,9 @@ export default function ProjectCard({ project }: { project: Project }) {
   if (!mounted) return null;
 
   return (
-    <div className={`h-[100dvh] w-[100dvw] `}>
+    <div className={`h-[100svh] w-[100dvw] `}>
       {/* Main Content */}
-      <main className="min-h-[100dvh] flex items-center lg:items-center justify-center p-6 md:pt-24">
+      <main className="min-h-[100svh] flex items-center lg:items-center justify-center p-6 md:pt-24">
         <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-12 items-center">
           {/* Project Info */}
           <div className="space-y-8">

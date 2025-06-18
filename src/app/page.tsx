@@ -75,13 +75,13 @@ const projects: Project[] = [
 
 export default function Home() {
   return (
-    <div className="relative h-[700dvh] w-full overscroll-none">
+    <div className="relative h-[700svh] w-full overscroll-none">
       <BackgroundPage />
       <AnimatedBlobs />
 
       <div className="relative h-full z-10 w-full pt-8 overscroll-none">
         <NavBar />
-        <div className="px-[5%] not-only-of-type:flex flex-col justify-center flex flex-1 h-[80dvh] ">
+        <div className="px-[5%] not-only-of-type:flex flex-col justify-center flex flex-1 h-[80svh] ">
           <h1 className="text-5xl md:text-6xl font-bold text-black mb-4 leading-tight">
             Hello!
             <br />
@@ -90,18 +90,17 @@ export default function Home() {
             These are some Ideas <span className="2xl:bg-black 2xl:text-white px-2 py-1 rounded-xl">I&apos;ve Helped Bring to Life</span>
           </h1>
         </div>
-        <div className="h-[500dvh] md:h-[700dvh] w-full relative">
+        <div className="h-[500svh] md:h-[700svh] w-full relative">
           <ScalingSection startScale={0.97}>
-            {/* <HorizontalScrollCarousel projects={projects} /> */}
             <Horizontal projects={projects} />
           </ScalingSection>
         </div>
-        <div className="h-[120dvh] w-full relative items-center justify-center flex ">
+        <div className="h-[130svh] w-full relative items-center justify-center flex ">
           <About />
         </div>
-        <div className=" h-[100dvh] w-full relative">
+        <div className="h-[110svh] w-full relative ">
           <ScalingSection growEnd={1} shrinkStart={1} startScale={0.9}>
-            <div id="contact">
+            <div id="contact" className="relative h-full w-full overscroll-none">
               <div className="flex flex-col items-center justify-center gap-10 h-[95vh]  w-full">
                 <EmailForm />
               </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 p-6">
+    <footer className="absolute bottom-0 left-0 right-0 p-6">
       <div className="flex justify-between items-center max-w-7xl mx-auto text-sm text-muted-foreground">
         <div>© 2025 Luke Johnson</div>
         <div className="flex gap-6">
