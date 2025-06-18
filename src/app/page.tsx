@@ -27,9 +27,9 @@ const projects: Project[] = [
     title: "Flight League",
     subtitle: "Darts X Football Game",
     description:
-      "Sync-Up is a mobile application built for the Warren Project, a charity based in Hull. The app provides information about events and activities in the local area tailored to the users' interests.",
+      "Flight League is a React Native/Expo darts app that simulates matchdays and full league-table progression. Play solo against an AI or go head-to-head with a friend, enter your score on a custom NumberPad, and watch the table update in real time. Powered by Expo-Router, it features screens for fixtures, live score entry, and results (which you can skip to dive straight into the next matchday).",
     longDescription:
-      "TaskFlow Pro revolutionizes team productivity with its intuitive interface and powerful features. Built from the ground up with performance and user experience in mind, it handles everything from simple to-do lists to complex project timelines.",
+      "At season’s end, Flight League automatically relegates the bottom three, promotes three new teams, resets all stats, and generates the next season’s fixtures. You can rename teams inline via a keyboard-aware editor, and all your custom names and settings are saved to persist across restarts.",
     technologies: ["React Native", "TypeScript", "Expo", "Algorithms"],
     imageUrl: "/ProjectImages/FlightLeague/FlightLeaguePhone.png",
     year: "2025",
