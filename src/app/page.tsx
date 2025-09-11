@@ -34,6 +34,7 @@ const projects: Project[] = [
     imageUrl: "/ProjectImages/FlightLeague/FlightLeaguePhone.png",
     year: "2025",
     featured: true,
+    siteLink: "https://www.flightleague.co.uk/",
   },
 
   {
