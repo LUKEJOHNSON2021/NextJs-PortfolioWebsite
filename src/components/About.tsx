@@ -34,7 +34,7 @@ export default function About() {
         <div className="space-y-3">
           <h2 className="text-xl font-medium">Core Skills</h2>
           <div className="flex flex-wrap gap-2 justify-center">
-            {["React", "React Native", "TypeScript", "C#", "Azure", "UI/UX Design", "Figma", "NoSQL", "SQL"].map((skill) => (
+            {["React", "React Native", "TypeScript", "C#", "Azure", "AWS", "UI/UX Design", "Figma", "NoSQL", "SQL"].map((skill) => (
               <div
                 key={skill}
                 className="
