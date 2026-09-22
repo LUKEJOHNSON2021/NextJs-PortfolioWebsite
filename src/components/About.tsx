@@ -34,10 +34,11 @@ export default function About() {
         <div className="space-y-3">
           <h2 className="text-xl font-medium">Core Skills</h2>
           <div className="flex flex-wrap gap-2 justify-center">
-            {["React", "React Native", "TypeScript", "C#", "Azure", "AWS", "UI/UX Design", "Figma", "NoSQL", "SQL"].map((skill) => (
-              <div
-                key={skill}
-                className="
+            {["React", "React Native", "TypeScript", "C#", "Swift", "Python", "Azure", "AWS", "UI/UX Design", "Figma", "NoSQL", "SQL"].map(
+              (skill) => (
+                <div
+                  key={skill}
+                  className="
           rounded-full border border-border bg-background 
           px-4 py-1 text-sm
 
@@ -47,10 +48,11 @@ export default function About() {
           ease-out                    /* easing */
           hover:scale-110             /* scale up to 110% on hover */
         "
-              >
-                {skill}
-              </div>
-            ))}
+                >
+                  {skill}
+                </div>
+              ),
+            )}
           </div>
         </div>
 

@@ -11,6 +11,32 @@ import EmailForm from "@/components/EmailForm";
 
 const projects: Project[] = [
   {
+    title: "Flight League",
+    subtitle: "Darts X Football Game",
+    description:
+      "Flight League is a React Native/Expo darts app that simulates matchdays and full league-table progression. Play solo against an AI or go head-to-head with a friend, enter your score on a custom NumberPad, and watch the table update in real time. Powered by Expo-Router, it features screens for fixtures, live score entry, and results (which you can skip to dive straight into the next matchday).",
+    longDescription:
+      "At season’s end, Flight League automatically relegates the bottom three, promotes three new teams, resets all stats, and generates the next season’s fixtures. You can rename teams inline via a keyboard-aware editor, and all your custom names and settings are saved to persist across restarts.",
+    technologies: ["React Native", "TypeScript", "Expo", "Algorithms"],
+    imageUrl: "/ProjectImages/FlightLeague/FlightLeaguePhone.png",
+    year: "2025/26",
+    featured: true,
+    siteLink: "https://www.flightleague.co.uk/",
+  },
+  {
+    title: "Race Feed",
+    subtitle: "Multi-series race schedule tracker",
+    description:
+      "A personal iOS app built out of my love for motorsport, tracking race schedules across a wide range of series. Race Feed sends a notification 10 minutes before each session starts, giving fans just enough time to find a stream before lights out, plus circuit details and up-to-date weather forecasts.",
+    longDescription:
+      "Built with Swift for the iOS app and Python for the backend web scraper that pulls race schedules and circuit data. The backend and scraper are deployed on AWS, which also powers silent background push notifications, allowing the app to quietly refresh its data without the user opening it",
+    technologies: ["Swift", "Python", "FastAPI", "AWS", "MongoDB"],
+    siteLink: "https://racefeed.lukejohnsondev.com/",
+    imageUrl: "/ProjectImages/RaceFeed/RaceFeed1.png",
+    year: "2025/26",
+    featured: true,
+  },
+  {
     title: "RCADIA",
     subtitle: "Crypto Retro Arcade",
     description:
@@ -21,32 +47,17 @@ const projects: Project[] = [
     siteLink: "https://www.rcadia.xyz/",
     imageUrl: "/ProjectImages/Rcadia/RcadiaLaptop.png",
     year: "2024/25",
-    featured: true,
   },
   {
-    title: "Flight League",
-    subtitle: "Darts X Football Game",
-    description:
-      "Flight League is a React Native/Expo darts app that simulates matchdays and full league-table progression. Play solo against an AI or go head-to-head with a friend, enter your score on a custom NumberPad, and watch the table update in real time. Powered by Expo-Router, it features screens for fixtures, live score entry, and results (which you can skip to dive straight into the next matchday).",
-    longDescription:
-      "At season’s end, Flight League automatically relegates the bottom three, promotes three new teams, resets all stats, and generates the next season’s fixtures. You can rename teams inline via a keyboard-aware editor, and all your custom names and settings are saved to persist across restarts.",
-    technologies: ["React Native", "TypeScript", "Expo", "Algorithms"],
-    imageUrl: "/ProjectImages/FlightLeague/FlightLeaguePhone.png",
-    year: "2025",
-    featured: true,
-    siteLink: "https://www.flightleague.co.uk/",
-  },
-
-  {
-    title: "Forrester Park Vets Golf Society",
+    title: "Forrester Park Vets & Mens Golf Society",
     subtitle: "Blog and Management System",
     description:
-      "I built a blog-style platform for Forrester Park Vets to help management share updates with members easily. The site includes a custom text editor and file upload system supporting images, PDFs, and Excel tables, with content stored in MongoDB and uploads handled via UploadThing.",
+      "I built a blog-style platform for Forrester Park Vets & Mens to help management share updates with members easily. The site includes a custom text editor and file upload system supporting images, PDFs, and Excel tables, with content stored in MongoDB.",
     longDescription:
       "To keep admin tools secure, I integrated NextAuth, limiting post creation and editing to authorized users. This project highlights my ability to deliver secure, user-friendly web apps tailored to specific client needs.",
     technologies: ["React", "Next.Js", "MongoDb", "Tailwind CSS", "TypeScript", "Authentication"],
     imageUrl: "/ProjectImages/VetsGolf/VetsGolf.png",
-    year: "2025",
+    year: "2025/26",
   },
   {
     title: "Sync Up",
@@ -59,19 +70,19 @@ const projects: Project[] = [
     imageUrl: "/ProjectImages/Sync-Up/SyncUpOnPhone.png",
     year: "2023/24",
   },
-  {
-    title: "Game Hub",
-    subtitle: "Information Hub for Games",
-    description:
-      "Game Hub is a React and TypeScript project built during my learning process, designed to showcase a responsive and user-friendly game discovery experience. Using Chakra UI for the interface, the app allows users to search and filter games by genre, platform, and sorting criteria, with data fetched from the RAWG.io API and displayed with detailed info and screenshots.",
-    longDescription:
-      "The application includes a dark mode toggle and is fully responsive across devices, ensuring a smooth and consistent experience on both desktop and mobile. This project helped strengthen my skills in building accessible UIs, working with external APIs, and creating adaptable layouts with modern frontend technologies.",
-    technologies: ["React", "TypeScript", "Vite"],
-    siteLink: "https://game-hub-tau-eight.vercel.app/",
-    imageUrl: "/ProjectImages/GameHub/GameHubLaptop.png",
-    year: "2022",
-    githubUrl: "https://github.com/LUKEJOHNSON2021/Game-hub",
-  },
+  //   {
+  //   title: "Game Hub",
+  //   subtitle: "Information Hub for Games",
+  //   description:
+  //     "Game Hub is a React and TypeScript project built during my learning process, designed to showcase a responsive and user-friendly game discovery experience. Using Chakra UI for the interface, the app allows users to search and filter games by genre, platform, and sorting criteria, with data fetched from the RAWG.io API and displayed with detailed info and screenshots.",
+  //   longDescription:
+  //     "The application includes a dark mode toggle and is fully responsive across devices, ensuring a smooth and consistent experience on both desktop and mobile. This project helped strengthen my skills in building accessible UIs, working with external APIs, and creating adaptable layouts with modern frontend technologies.",
+  //   technologies: ["React", "TypeScript", "Vite"],
+  //   siteLink: "https://game-hub-tau-eight.vercel.app/",
+  //   imageUrl: "/ProjectImages/GameHub/GameHubLaptop.png",
+  //   year: "2022",
+  //   githubUrl: "https://github.com/LUKEJOHNSON2021/Game-hub",
+  // },
 ];
 
 export default function Home() {

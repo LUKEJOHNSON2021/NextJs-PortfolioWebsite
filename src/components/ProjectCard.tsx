@@ -50,10 +50,10 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className={`h-[100svh] w-[100dvw] `}>
       {/* Main Content */}
-      <main className="min-h-[100svh] flex items-center lg:items-center justify-center p-6 md:pt-24">
-        <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-12 items-center">
+      <main className="min-h-[100svh] flex items-center lg:items-center justify-center p-6 md:pt-24 ">
+        <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-12 items-center ">
           {/* Project Info */}
-          <div className="space-y-8">
+          <div className="space-y-8 min-w-0">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Badge variant="secondary" className="text-xs">
@@ -124,22 +124,17 @@ export default function ProjectCard({ project }: { project: Project }) {
 
           {/* Project Visual */}
           {!isMobile ? (
-            <div className="relative">
+            <div className="relative min-w-0">
               <div
-                className={`relative ${
+                className={`relative mx-auto h-[60svh] max-h-[650px] w-auto max-w-full ${
                   isPortrait ? "aspect-[3/4]" : "aspect-[4/3]"
                 } rounded-2xl overflow-hidden shadow-2xl bg-white dark:bg-zinc-900 border`}
               >
+                {" "}
                 {/* Iframe height 600 width 400 showing liveUrl */}
-                {project.liveUrl ? (
-                  <iframe src={project.liveUrl} className="absolute inset-0 w-full h-full border-0" title="Project Live Preview" />
-                ) : (
-                  <Image src={project.imageUrl!} alt={`${project.title} Project Image`} fill className="object-contain" priority />
-                )}
-
+                <Image src={project.imageUrl!} alt={`${project.title} Project Image`} fill className="object-contain" priority />
                 {/* Overlay gradient for better text readability */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-
                 {/* Floating elements for visual interest */}
                 {project.liveUrl && (
                   <div className="absolute top-4 right-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-lg px-3 py-2 text-sm font-medium">
